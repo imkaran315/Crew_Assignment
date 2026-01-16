@@ -13,7 +13,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to Crew Chat")
+                Text("Welcome to Crew")
                     .font(.title)
                     .padding()
                 

@@ -98,6 +98,8 @@ struct ChatView: View {
             }
         }) {
             ImagePicker(selectedImage: $inputImage, sourceType: .photoLibrary)
+                .ignoresSafeArea()
+
         }
         .fullScreenCover(isPresented: $showCamera, onDismiss: {
             if let img = inputImage {
@@ -106,6 +108,7 @@ struct ChatView: View {
             }
         }) {
             ImagePicker(selectedImage: $inputImage, sourceType: .camera)
+                .ignoresSafeArea()
         }
         .overlay(copiedToast)
     }

@@ -100,7 +100,7 @@ class ChatViewModel: ObservableObject {
     }
     
     private func loadSeedData() {
-        // Mock data from PDF
+        // Mock data from PDF, added 15 more msges to make total 25, as required
         let jsonString = """
         [
             { "id": "msg-001", "message": "Hi! I need help booking a flight to Mumbai.", "type": "text", "sender": "user", "timestamp": 1703520000000 },
@@ -112,7 +112,25 @@ class ChatViewModel: ObservableObject {
             { "id": "msg-007", "message": "", "type": "file", "file": { "path": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400", "fileSize": 245680 }, "sender": "user", "timestamp": 1703520300000 },
             { "id": "msg-008", "message": "Thanks! I see you prefer IndiGo.", "type": "text", "sender": "agent", "timestamp": 1703520330000 },
             { "id": "msg-009", "message": "Here are 3 options.", "type": "file", "file": { "path": "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=400", "fileSize": 189420 }, "sender": "agent", "timestamp": 1703520420000 },
-            { "id": "msg-010", "message": "The second option looks perfect!", "type": "text", "sender": "user", "timestamp": 1703520480000 }
+            { "id": "msg-010", "message": "The second option looks perfect!", "type": "text", "sender": "user", "timestamp": 1703520480000 },
+
+            { "id": "msg-011", "message": "Great choice! Would you like me to proceed with booking?", "type": "text", "sender": "agent", "timestamp": 1703520540000 },
+            { "id": "msg-012", "message": "Yes, please go ahead.", "type": "text", "sender": "user", "timestamp": 1703520600000 },
+            { "id": "msg-013", "message": "Sure. Can you confirm passenger details?", "type": "text", "sender": "agent", "timestamp": 1703520660000 },
+            { "id": "msg-014", "message": "It will be just me. Same details as last booking.", "type": "text", "sender": "user", "timestamp": 1703520720000 },
+            { "id": "msg-015", "message": "Got it. I’ll use your saved profile.", "type": "text", "sender": "agent", "timestamp": 1703520780000 },
+
+            { "id": "msg-016", "message": "Here’s the fare breakdown for your trip.", "type": "file", "file": { "path": "https://images.unsplash.com/photo-1502920514313-52581002a659?w=400", "fileSize": 210345 }, "sender": "agent", "timestamp": 1703520840000 },
+            { "id": "msg-017", "message": "Looks good to me.", "type": "text", "sender": "user", "timestamp": 1703520900000 },
+            { "id": "msg-018", "message": "Awesome. Do you want to add travel insurance?", "type": "text", "sender": "agent", "timestamp": 1703520960000 },
+            { "id": "msg-019", "message": "No, that won’t be necessary.", "type": "text", "sender": "user", "timestamp": 1703521020000 },
+            { "id": "msg-020", "message": "Alright. Proceeding with payment.", "type": "text", "sender": "agent", "timestamp": 1703521080000 },
+
+            { "id": "msg-021", "message": "Payment successful 🎉", "type": "text", "sender": "agent", "timestamp": 1703521140000 },
+            { "id": "msg-022", "message": "Here is your e-ticket.", "type": "file", "file": { "path": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=400", "fileSize": 325900 }, "sender": "agent", "timestamp": 1703521200000 },
+            { "id": "msg-023", "message": "Received it. Thank you!", "type": "text", "sender": "user", "timestamp": 1703521260000 },
+            { "id": "msg-024", "message": "Happy to help! Have a safe journey.", "type": "text", "sender": "agent", "timestamp": 1703521320000 },
+            { "id": "msg-025", "message": "Thanks again 😊", "type": "text", "sender": "user", "timestamp": 1703521380000 }
         ]
         """
         
