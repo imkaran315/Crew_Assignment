@@ -11,7 +11,8 @@ import SwiftUI
 struct Crew_AssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            HomeView()
         }
     }
 }
